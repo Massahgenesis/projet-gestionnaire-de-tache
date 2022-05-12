@@ -1,0 +1,201 @@
+/* body{
+    background-color: aqua;
+}
+.contener{
+    background-color: white;
+    height: 500px;
+    width: 70%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.btn{
+    align-items: center;
+}
+.input{
+    text-align: center;
+}
+.saisi{
+    padding: 10px;
+}
+.submit{
+    padding: 10px;
+}  */
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: Poppins, sans-serif;
+   
+}
+
+.container{
+    background-color: plum;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 8px;
+    height: 700px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.header{
+    padding: 25px;
+}
+
+.header h1{
+    color: rgb(0,0,77);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.list{
+    flex-grow: 1;
+    padding: 25px;
+    overflow: scroll;
+}
+
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li i{
+    cursor: pointer;
+    color: plum;
+    padding: 20px;
+    background-color: rgb(0,0,77);
+    height: 5px;
+    margin: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.list ul li a{
+
+    width: 20px;
+    
+}
+
+.list ul li i:hover{
+
+    background-color: lightgrey;
+    border-radius: 5px;
+    color: black;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.add-task{
+    padding: 25px;
+    display: flex;
+}
+
+ul li span{
+
+    background-color: rgb(0,0,77);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    transition: 1s;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+   
+    
+}
+
+.list ul li span:hover{
+
+    background-color: lightgrey;
+    color: black;
+}
+
+.add-task input{
+    border: 1px solid rgb(0,0,77);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex-grow: 1;
+    padding: 15px;
+    outline: none;
+}
+
+.add-task button{
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(0,0,77);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.add-task input:hover{
+    border: 1px solid plum;
+}
+
+.add-task button :hover{
+
+    background-color: lightgrey;
+    color: black;
+}
+
+
+.add-task input:active{
+    border: 1px solid rgb(0,0,77);
+}
+
+.add-task input:focus{
+
+}
+
+.add-task button:hover{
+    border: 1px solid rgb(0,0,77);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow:inset 0 0 5px rgb(0,0,77);
+    border: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:plum ;
+    border-radius:10px ;
+}
+
+/* ----------------------design responsif------------------------ */
+
+@media  and {
+    
+}
